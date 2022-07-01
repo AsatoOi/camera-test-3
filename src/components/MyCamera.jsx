@@ -7,8 +7,9 @@ import {
   Text,
 } from "react-native";
 import { Camera, CameraType } from "expo-camera";
+
+const vision = require("@google-cloud/vision");
 import { CONFIG } from "../config/environments.js";
-import { vision } from "@google-cloud/vision";
 
 const client = new vision.ImageAnnotatorClient(CONFIG);
 
